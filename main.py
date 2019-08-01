@@ -37,6 +37,11 @@ def do_misc_utils():
     print('Random number: {}'.format(misc.rand()))
     print('Random password: {}'.format(misc.generate_password()))
 
+    print('Remove redundant spaces:')
+    string = '   The    quick     brown    fox    jumps    over the    lazy      dog'
+    print('-> Before: {}'.format(string))
+    print('-> After: {}'.format(misc.sanitize_string(string)))
+
 
 print('Hello, Time is: {}'.format(datetime.utcnow()))
 
